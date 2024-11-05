@@ -5,7 +5,10 @@ import './App.css';
 import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
 import Fragment from './components/Fragment';
+import Container from "./components/Container";
 // import ListRender from './components/ListRender';
+
+
 
 function App() {
   // const nome = "Jaquim";
@@ -16,6 +19,9 @@ function App() {
     {id: 2, marca: "KIA", cor: "Branco", newCar: false, km: 3192},
     {id: 3, marca: "Renault", cor: "Aul", newCar: true, km: 3223}
   ]
+
+  
+
 
   return (
     <div className="App">
@@ -38,6 +44,13 @@ function App() {
         />
       ))}
       <Fragment propFragment="Teste" />
+      {/* children */}
+      <Container myValue="Testing">
+          <p>Olá mundo!</p>
+      </Container>
+      <Container myValue="Testing 2">
+          <h5>Olá mundo!</h5>
+      </Container>
     </div>
   );
 }
