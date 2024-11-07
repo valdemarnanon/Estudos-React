@@ -6,7 +6,6 @@ const UserDetails = () => {
         {id: 3, nome: "Alexsandro", idade: "41", profissao: "Trabalhador"},
     ]
 
-
   return (
     <div>
         <div>
